@@ -2,6 +2,7 @@ loadEvents();
 // load every event in the page
 function loadEvents(){
   document.querySelector('form').addEventListener('submit',submit);
+  document.getElementById('clear').addEventListener('click',clearList)
 }
 // subit data function
 function submit(e){
