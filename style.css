@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* width */
+
+::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 6px
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f9c62f;
+}
+
+div.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-image: linear-gradient(to right, #e2abcb, #8f618e)
+}
+
+div.todoListContainer {
+  display: flex;
+  height: 70%;
+  border: 1px solid #fff;
+  width: 50%;
+  border-radius: 6px;
+  background-color: #fff;
+  position: relative;
+  justify-content: center;
+}
+
+.addIcon {
+  font-weight: bold;
+  position: absolute;
+  bottom: -30px;
+  font-size: 2rem;
+  color: #fff;
+  height: 60px;
+  width: 60px;
+  background-color: #f9c62f;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.todoItems {
+  height: 85%;
+  position: absolute;
+  width: 100%;
+  padding: 20px;
+  overflow-y: auto;
+}
+.todoItem {
+  border: 1px solid;
+  padding: 10px;
+  border-radius: 6px;
+  animation-name: todoItemAnimation;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+.todoItemContent {
+  display: inline;
+  margin-left: 20px;
+}
+
+.todoItemDone {
+  border: 1px solid;
+  padding: 10px;
+  opacity: 0.3;
+}
+
+@keyframes todoItemAnimation {
+  from {
+    margin-top: -70px;
+  }
+  to {
+    margin-top: -30px;
+  }
+}
+.footer{
+  text-align: center;
+  background-image: linear-gradient(to right, #e2abcb, #8f618e)
+}
