@@ -6,7 +6,7 @@ function loadEvents(){
   document.querySelector('ul').addEventListener('click',deleteOrTick);
 
 }
-// subit data function
+// submit data function
 function submit(e){
   e.preventDefault();
   let taskList;
